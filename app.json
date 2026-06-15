@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Exterminatus",
+    "slug": "exterminatus",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "exterminatus",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080608"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.exterminatus.app"
+    },
+    "android": {
+      "package": "com.exterminatus.app"
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f5ea8fb4-2497-4c8c-aa16-cdc2c3dee562"
+      }
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
