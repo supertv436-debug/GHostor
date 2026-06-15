@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Exterminatus"
+version = "1.0.0"
+id = "artifacts/exterminatus"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 26029
+
+[services.development]
+run = "pnpm --filter @workspace/exterminatus run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/exterminatus", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/exterminatus", "run", "serve" ]
+
+[services.env]
+PORT = "26029"
+BASE_PATH = "/"
